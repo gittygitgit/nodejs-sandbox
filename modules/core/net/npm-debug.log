@@ -1,0 +1,134 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'growing-file' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.33
+4 verbose cache add [ 'growing-file', null ]
+5 verbose cache add name=undefined spec="growing-file" args=["growing-file",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'growing-file',
+6 verbose parsed url   path: 'growing-file',
+6 verbose parsed url   href: 'growing-file' }
+7 silly lockFile 9d7de455-growing-file growing-file
+8 verbose lock growing-file /Users/grudkowm/.npm/9d7de455-growing-file.lock
+9 silly lockFile 9d7de455-growing-file growing-file
+10 silly lockFile 9d7de455-growing-file growing-file
+11 verbose addNamed [ 'growing-file', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 4648646e-growing-file growing-file@
+14 verbose lock growing-file@ /Users/grudkowm/.npm/4648646e-growing-file.lock
+15 silly addNameRange { name: 'growing-file', range: '*', hasData: false }
+16 verbose request where is /growing-file
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id af255f4d3b36c2ff
+19 verbose url raw /growing-file
+20 verbose url resolving [ 'https://registry.npmjs.org/', './growing-file' ]
+21 verbose url resolved https://registry.npmjs.org/growing-file
+22 verbose request where is https://registry.npmjs.org/growing-file
+23 info trying registry request attempt 1 at 15:03:12
+24 verbose etag "71PD1C3YPA4H2X916TZ16GDJT"
+25 http GET https://registry.npmjs.org/growing-file
+26 http 304 https://registry.npmjs.org/growing-file
+27 silly registry.get cb [ 304,
+27 silly registry.get   { date: 'Thu, 31 Dec 2015 22:55:12 GMT',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     'cache-control': 'max-age=300',
+27 silly registry.get     etag: '"71PD1C3YPA4H2X916TZ16GDJT"',
+27 silly registry.get     age: '0',
+27 silly registry.get     connection: 'keep-alive',
+27 silly registry.get     'x-served-by': 'cache-lax1423-LAX',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1451602512.070890,VS0,VE45',
+27 silly registry.get     vary: 'Accept' } ]
+28 verbose etag https://registry.npmjs.org/growing-file from cache
+29 silly addNameRange number 2 { name: 'growing-file', range: '*', hasData: true }
+30 silly addNameRange versions [ 'growing-file', [ '0.1.1', '0.1.2', '0.1.3' ] ]
+31 verbose addNamed [ 'growing-file', '0.1.3' ]
+32 verbose addNamed [ '0.1.3', '0.1.3' ]
+33 silly lockFile b86d4c16-growing-file-0-1-3 growing-file@0.1.3
+34 verbose lock growing-file@0.1.3 /Users/grudkowm/.npm/b86d4c16-growing-file-0-1-3.lock
+35 silly lockFile b86d4c16-growing-file-0-1-3 growing-file@0.1.3
+36 silly lockFile b86d4c16-growing-file-0-1-3 growing-file@0.1.3
+37 silly lockFile 4648646e-growing-file growing-file@
+38 silly lockFile 4648646e-growing-file growing-file@
+39 silly resolved [ { name: 'growing-file',
+39 silly resolved     description: 'A readable file stream for files that are growing.',
+39 silly resolved     version: '0.1.3',
+39 silly resolved     homepage: 'https://github.com/felixge/node-growing-file',
+39 silly resolved     repository:
+39 silly resolved      { type: 'git',
+39 silly resolved        url: 'git://github.com/felixge/node-growing-file.git' },
+39 silly resolved     author:
+39 silly resolved      { name: 'Felix Geisendörfer',
+39 silly resolved        email: 'felix@debuggable.com',
+39 silly resolved        url: 'http://debuggable.com/' },
+39 silly resolved     main: './index.js',
+39 silly resolved     directories: { lib: 'lib' },
+39 silly resolved     engines: { node: '*' },
+39 silly resolved     dependencies: { oop: '0.0.3' },
+39 silly resolved     devDependencies: {},
+39 silly resolved     _npmJsonOpts:
+39 silly resolved      { file: '/Users/felix/.npm/growing-file/0.1.3/package/package.json',
+39 silly resolved        wscript: false,
+39 silly resolved        serverjs: false,
+39 silly resolved        contributors: false },
+39 silly resolved     _id: 'growing-file@0.1.3',
+39 silly resolved     _engineSupported: true,
+39 silly resolved     _npmVersion: '1.0.14',
+39 silly resolved     _nodeVersion: 'v0.4.9-pre',
+39 silly resolved     _defaultsLoaded: true,
+39 silly resolved     dist:
+39 silly resolved      { shasum: 'c7c8c24f53e8e2a71483a50b646d6194f0a5adae',
+39 silly resolved        tarball: 'http://registry.npmjs.org/growing-file/-/growing-file-0.1.3.tgz' },
+39 silly resolved     scripts: {},
+39 silly resolved     _shasum: 'c7c8c24f53e8e2a71483a50b646d6194f0a5adae',
+39 silly resolved     _from: 'growing-file@',
+39 silly resolved     _resolved: 'https://registry.npmjs.org/growing-file/-/growing-file-0.1.3.tgz',
+39 silly resolved     bugs: { url: 'https://github.com/felixge/node-growing-file/issues' },
+39 silly resolved     readme: 'ERROR: No README data found!' } ]
+40 info install growing-file@0.1.3 into /usr/local/lib
+41 info installOne growing-file@0.1.3
+42 verbose lib/node_modules/growing-file unbuild
+43 verbose tar unpack /Users/grudkowm/.npm/growing-file/0.1.3/package.tgz
+44 silly lockFile fcfe3d66-al-lib-node-modules-growing-file tar:///usr/local/lib/node_modules/growing-file
+45 verbose lock tar:///usr/local/lib/node_modules/growing-file /Users/grudkowm/.npm/fcfe3d66-al-lib-node-modules-growing-file.lock
+46 silly lockFile a516be47-m-growing-file-0-1-3-package-tgz tar:///Users/grudkowm/.npm/growing-file/0.1.3/package.tgz
+47 verbose lock tar:///Users/grudkowm/.npm/growing-file/0.1.3/package.tgz /Users/grudkowm/.npm/a516be47-m-growing-file-0-1-3-package-tgz.lock
+48 silly gunzTarPerm modes [ '755', '644' ]
+49 error Error: EACCES, mkdir '/usr/local/lib/node_modules/growing-file'
+49 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/growing-file']
+49 error   errno: 3,
+49 error   code: 'EACCES',
+49 error   path: '/usr/local/lib/node_modules/growing-file',
+49 error   fstream_type: 'Directory',
+49 error   fstream_path: '/usr/local/lib/node_modules/growing-file',
+49 error   fstream_class: 'DirWriter',
+49 error   fstream_stack:
+49 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+49 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+49 error      'Object.oncomplete (fs.js:107:15)' ] }
+50 error Please try running this command again as root/Administrator.
+51 error System Darwin 14.0.0
+52 error command "node" "/usr/local/bin/npm" "install" "-g" "growing-file"
+53 error cwd /Users/grudkowm/Documents/repositories/nodejs-sandbox/modules/core/net
+54 error node -v v0.10.33
+55 error npm -v 1.4.28
+56 error path /usr/local/lib/node_modules/growing-file
+57 error fstream_path /usr/local/lib/node_modules/growing-file
+58 error fstream_type Directory
+59 error fstream_class DirWriter
+60 error code EACCES
+61 error errno 3
+62 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/growing-file'
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+63 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+63 error fstream_stack Object.oncomplete (fs.js:107:15)
+64 verbose exit [ 3, true ]
