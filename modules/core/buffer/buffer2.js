@@ -10,13 +10,36 @@ var rd = readline.createInterface({
 });
 
 rd.on('line', function(line) {
+    
     var b = new Buffer(line);
+    util.log("Read line [" + b.length + "]");
     var len = b.readInt8(0);
+    util.log("line=|" + line + "|");
     util.log("length=" + len);
 
     msgBytes = b.slice(1, 1 + len);
-    util.log("msgType=" + msgBytes.toString('ascii', 0, 1));
-    util.log("|" + msgBytes.toString() + "|");
+
+    var msgType = String.fromCharCode(msgBytes.readInt8(0));
+    util.log(util.format("msgType      = [%s]",  msgType));
+    
+    switch (msgType)
+    {
+    case 'B':
+      util.log(util.format("id           = [%d]",  msgBytes.readInt8(1)));
+      util.log(util.format("name         = [%s]",  msgBytes.toString('ascii', 2, 32)));
+      util.log(util.format("country      = [%s]",  msgBytes.toString('ascii', 32, 53)));
+      break;
+    case 'S':
+      util.log(util.format("id           = [%d]",  msgBytes.readInt8(1)));
+      util.log(util.format("name         = [%s]",  msgBytes.toString('ascii', 2, 30)));
+      break;
+    case 'A':
+      util.log(util.format("id           = [%d]",  msgBytes.readInt8(1)));
+      util.log(util.format("name         = [%s]",  msgBytes.toString('ascii', 2, 30)));
+      break;
+    default:
+      util.log("unknown msgType");      
+    }
 });
 
 rd.on('close', function() {
