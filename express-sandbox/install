@@ -1,7 +1,0 @@
-var express = require('express');
-
-var app = express();
-
-var store = [];
-app.listen(3000);
-
