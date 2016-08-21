@@ -1,0 +1,10 @@
+// In browsers, global is the top-level scope.
+// In node, it's different.
+
+// For example, var foo in a browser outside of a function will
+// scope the variable to the global scope.
+
+// In node, var foo would scope the variable to the module scope.
+console.log(global);
+
+console.log("module=[%s]").format(module);
